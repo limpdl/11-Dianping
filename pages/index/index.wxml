@@ -1,0 +1,6 @@
+<view class="card-product restaurant-list">
+  <view class="card-product-infos"  wx:for="{{ restaurants }}" wx:for-item="item">
+    <view class="h2 rest-name" bindtap="onTap" data-id="{{ item.id }}">{{ item.name }}</view>
+    <view class="p rest-desc">{{ item.description }}</view>
+  </view>
+</view>

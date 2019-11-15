@@ -1,0 +1,25 @@
+<view wx:if="{{ currentUser }}">
+  <text>{{ currentUser._username }}</text>
+</view>
+
+<view wx:else>
+  <form bindsubmit="onSubmit">
+    <view>用户名</view>
+    <input name="username" placeholder="请输入用户名"></input>
+    <view>密码</view>
+    <input name="password" type="password"></input>
+    <button formType="submit">注册</button>
+    <button bindtap="">已经注册？去登录</button>
+  </form>
+
+  <!-- <form bindsubmit="onSubmitLogin">
+    <view>用户名</view>
+    <input name="username" placeholder="请输入用户名"></input>
+    <view>密码</view>
+    <input name="password" type="password"></input>
+    <button formType="submit">登录</button>
+  </form> -->
+</view>
+
+
+

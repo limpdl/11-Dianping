@@ -1,0 +1,9 @@
+<view>
+  <view>{{ restaurant.name }}</view>
+  <view>{{ restaurant.description }}</view>
+  <view>餐厅评论</view>
+  <view wx:for="{{ reviews }}" wx:for-item="review">
+    <text>{{ review.content }}</text>
+    <text>{{ review.rating }}</text>
+  </view>
+</view>

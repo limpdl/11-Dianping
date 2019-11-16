@@ -6,4 +6,13 @@
     <text>{{ review.content }}</text>
     <text>{{ review.rating }}</text>
   </view>
+
+  <view class="add-review">添加评论</view>
+  <form bindsubmit="onSubmitReview">
+    <input name="content" placeholder="请输入评论内容"></input>
+    <picker mode="selector" range="{{ ratingValues }}" bindchange="onChangeRating">
+      评分 {{ rating }}
+    </picker>
+    <button form-type="submit">提交评论</button>
+  </form>
 </view>

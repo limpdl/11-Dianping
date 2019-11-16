@@ -1,1 +1,7 @@
-/* pages/show/show.wxss */
+view, input, button {
+  margin: 5px;
+}
+
+input {
+  border: solid silver 0.5px;
+}

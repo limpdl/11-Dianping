@@ -1,1 +1,14 @@
 /* pages/user/user.wxss */
+view {
+  text-align: center;
+  margin: 5px;
+}
+
+input {
+  border: solid silver 0.5px;
+  margin: 5px;
+}
+
+button {
+  margin: 5px;
+}
